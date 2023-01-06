@@ -1,0 +1,115 @@
+body {
+    text-align: center;
+    background-color: #011F3F;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+#level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    color: #FEF2BF;
+    padding: 5px 0;
+    /*position: fixed;*/
+    width: 100%;
+}
+.parent{
+    margin: auto;
+}
+.container {
+    width: 500px;
+}
+.row{
+    height: auto;
+    width: auto;
+}
+.btn {
+    /*margin: 10px;*/
+    display: inline-block;
+    height: 175px;
+    width: 175px;
+    border: 10px solid black;
+    border-radius: 20%;
+    cursor: pointer;
+    border-radius: 100%;
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: revert;
+}
+
+.game-over {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.red {
+    background-color: red;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: unset;
+    -webkit-mask-image: radial-gradient(circle 75px at bottom left, transparent 0, transparent 75px, black 21px);
+}
+
+.green {
+    background-color: green;
+    border-bottom-left-radius: unset;
+    border-top-left-radius: 100%;
+    -webkit-mask-image: radial-gradient(circle 75px at bottom right, transparent 0, transparent 75px, black 21px);
+}
+
+.blue {
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: unset;
+    -webkit-mask-image: radial-gradient(circle 75px at top left, transparent 0, transparent 75px, black 21px);
+}
+
+.yellow {
+    background-color: yellow;
+    -webkit-mask-image: radial-gradient(circle 75px at top right, transparent 0, transparent 75px, black 21px);
+}
+
+.pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+}
+#start{
+    /*    width: 250px;
+        height: 50px;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-top: 25px;
+        border: none;*/
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 50%;
+    top: -300px;
+    position: relative;
+}
+
+@media screen and (max-width : 800px){
+    body{
+        margin-top: 100px;
+    }
+    #level-title {
+        font-size: 1.5rem;
+    }
+    .btn{
+        height: 150px;
+        width: 150px;
+    }
+    #start{
+        top: -275px;
+    }
+    .container{
+        width: 100vw;
+        margin: auto;
+    }
+}
