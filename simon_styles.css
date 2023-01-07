@@ -87,22 +87,16 @@ body {
     height: 150px;
     border-radius: 5px;
     font-size: 20px;
-    /* margin-top: 25px; */
     border: none;
     border-radius: 100%;
-    top: -275px;
     position: relative;
+    top: -275px;
     display: inline-table;
     background-color: whitesmoke;
     padding: 0;
 }
 #btn-div {
     z-index: 5;
-}
-#btn-start span{
-    position: absolute;
-    left: 60px;
-    top: 60px;
 }
 #start{
     position: initial;
@@ -114,16 +108,6 @@ body {
 
     #level-title {
         font-size: 1.5rem;
-    }
-
-    .btn {
-        height: 150px;
-        width: 150px;
-    }
-
-    #start,
-    #btn-div {
-        top: -275px;
     }
 
     .container {
