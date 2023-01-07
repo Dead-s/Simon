@@ -40,8 +40,8 @@ $(document).ready(() => {
 
     function check(userChoice) {
         let users = userSelectedcolors, random = randomseq, valid = false;
-        console.log("random : " + randomseq);
-        console.log("users color : " + userSelectedcolors);
+//         console.log("random : " + randomseq);
+//         console.log("users color : " + userSelectedcolors);
 
         if (random[userChoice] === users[userChoice]) {
             if (users.length === random.length) {
