@@ -17,16 +17,20 @@ body {
     /*position: fixed;*/
     width: 100%;
 }
-.parent{
+
+.parent {
     margin: auto;
 }
+
 .container {
     width: 500px;
 }
-.row{
+
+.row {
     height: auto;
     width: auto;
 }
+
 .btn {
     /*margin: 10px;*/
     display: inline-block;
@@ -76,39 +80,53 @@ body {
     box-shadow: 0 0 20px white;
     background-color: grey;
 }
-#start{
-    /*    width: 250px;
-        height: 50px;
-        border-radius: 5px;
-        font-size: 20px;
-        margin-top: 25px;
-        border: none;*/
+
+#start,
+#btn-div {
     width: 150px;
     height: 150px;
     border-radius: 5px;
     font-size: 20px;
-    margin-top: 25px;
+    /* margin-top: 25px; */
     border: none;
-    border-radius: 50%;
-    top: -300px;
+    border-radius: 100%;
+    top: -275px;
     position: relative;
+    display: inline-table;
+    background-color: whitesmoke;
+    padding: 0;
 }
-
-@media screen and (max-width : 800px){
-    body{
+#btn-div {
+    z-index: 5;
+}
+#btn-start span{
+    position: absolute;
+    left: 60px;
+    top: 60px;
+}
+#start{
+    position: initial;
+}
+@media screen and (max-width : 800px) {
+    body {
         margin-top: 100px;
     }
+
     #level-title {
         font-size: 1.5rem;
     }
-    .btn{
+
+    .btn {
         height: 150px;
         width: 150px;
     }
-    #start{
+
+    #start,
+    #btn-div {
         top: -275px;
     }
-    .container{
+
+    .container {
         width: 100vw;
         margin: auto;
     }
