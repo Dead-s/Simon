@@ -22,6 +22,7 @@ $(document).ready(() => {
     });
 
     function nextSequence() {
+        level++;
         $("#level-title").text("Level " + level);
         var random = Math.floor(Math.random() * 4);
         console.log(random);
