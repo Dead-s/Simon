@@ -40,8 +40,8 @@ $(document).ready(() => {
 
     function check(userChoice) {
         let users = userSelectedcolors, random = randomseq, valid = false;
-//         console.log("random : " + randomseq);
-//         console.log("users color : " + userSelectedcolors);
+        console.log("random : " + randomseq);
+        console.log("users color : " + userSelectedcolors);
 
         if (random[userChoice] === users[userChoice]) {
             if (users.length === random.length) {
@@ -59,13 +59,15 @@ $(document).ready(() => {
                 $("body").css("background-color", "#011F3F");
             }, 500);
             playAudio("wrong");
-            level = 0;
             $("#level-title").text("Game over !");
             $("#start").css("visibility", "visible").text("Restart");
+            level = 0;
+            randomseq = [];
+            userSelectedcolors = [];
         }
     }
 
-   function pressed(currentColor) {
+    function pressed(currentColor) {
         $("#" + currentColor).addClass("pressed");
         setTimeout(function () {
             $("#" + currentColor).removeClass("pressed");
