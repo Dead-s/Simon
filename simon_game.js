@@ -59,9 +59,9 @@ $(document).ready(() => {
                 $("body").css("background-color", "#011F3F");
             }, 500);
             playAudio("wrong");
+            level = 0;
             $("#level-title").text("Game over !");
             $("#start").css("visibility", "visible").text("Restart");
-            level = 0;
         }
     }
 
