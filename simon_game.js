@@ -61,10 +61,11 @@ $(document).ready(() => {
             playAudio("wrong");
             $("#level-title").text("Game over !");
             $("#start").css("visibility", "visible").text("Restart");
+            level = 0;
         }
     }
 
-    function pressed(currentColor) {
+   function pressed(currentColor) {
         $("#" + currentColor).addClass("pressed");
         setTimeout(function () {
             $("#" + currentColor).removeClass("pressed");
