@@ -38,7 +38,7 @@ $(document).ready(() => {
 //            alert("Easy mode!");
             randomseq.forEach((color, index) => {
                 setTimeout(() => {
-                    $("#" + color + "").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+                    $("#" + color + "").fadeOut(200).fadeIn(100);
                     playAudio(color);
                     if (index === randomseq.length - 1) {
                         $("#taps-count").text("Your turn!");
@@ -52,7 +52,7 @@ $(document).ready(() => {
         }
         if ($("#hard-mode").prop('checked') === true) {
 //            alert("Hard mode!");
-            $("#" + audioforcolor + "").fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+            $("#" + audioforcolor + "").fadeOut(200).fadeIn(100);
             playAudio(audioforcolor);
             $("#taps-count").text("Your turn!");
             setTimeout(() => {
